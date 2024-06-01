@@ -4,7 +4,7 @@ require 'navbar.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Connect to the database (replace with your database credentials)
-    $db = new mysqli("localhost", "root", "", "ecom");
+    $db = new mysqli("localhost", "root", "", "petshop");
 
     // Check for a database connection error
     if ($db->connect_error) {

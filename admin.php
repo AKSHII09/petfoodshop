@@ -1,6 +1,8 @@
 <?php
 include('dbconnect.php');
 
+
+
 if (isset($_POST['submit'])) {
     $title = mysqli_real_escape_string($conn, $_POST['title']);
     $descr = mysqli_real_escape_string($conn, $_POST['descr']);
@@ -34,7 +36,7 @@ if (isset($_POST['submit'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upload</title>
-
+<link rel="stylesheet" href="style.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
@@ -60,8 +62,45 @@ if (isset($_POST['submit'])) {
 </head>
 
 <body>
+<head> <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+ 
+  <link rel="shortcut icon" href="./img/clogo.png"  type="image/x-icon">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/utils.css" />
+</head>
+<!-- <header class="m-auto position-sticky sticky-top top-0" style=" background-color: white;" > -->
+  <nav class="navbar navbar-expand-lg bg-light text-dark position-sticky top-0 " id="navb">
+    <div class="d-flex ">
+      <a href="./index.php"><img src="./img/clogo.png" alt="" style="width: 4rem;" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-brand ms-auto ">
+          <li class="nav-item">
+            <a class="nav-link text-dark" aria-current="page" href="index.php">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="about.php">NOTIFICATIONS</a>
+          </li>
+         
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- </header> -->
+    <h2 class="d-flex" style="justify-content:center; background-color:black; color:white">ADMIN PANEL</h2>
     <div class="container">
         <div class="row justify-content-center">
+     
             <div class="col-md-8">
                 <h2 class="display-4 mb-4">Upload a Product</h2>
                 <form action="Admin.php" method="post" enctype="multipart/form-data">
@@ -80,8 +119,8 @@ if (isset($_POST['submit'])) {
                     <div class="form-group">
                         <label for="category">Category</label>
                         <select class="form-control" name="category" id="category" required>
-                            <option value="Men">Men</option>
-                            <option value="Women">Women</option>
+                            <option value="Cat">Cat</option>
+                            <option value="Dog">Dog</option>
                         </select>
                     </div>
 
@@ -100,6 +139,7 @@ if (isset($_POST['submit'])) {
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+JnxU6wzXC8s5D1nFPFO6j5KXx8xg1yku2K1QDd2iexl5z5C" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+   <?php include('footer.php');?>
 </body>
 
 </html>

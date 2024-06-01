@@ -61,7 +61,7 @@ margin:0% 3%;
 </head>
 <body>
 <footer>
-<div class="footer">
+<div class="footer"style="margin-top:10rem;">
 <div class="roww">
 <a href="#"><i class="fa fa-facebook"></i></a>
 <a href="#"><i class="fa fa-instagram"></i></a>
@@ -71,16 +71,16 @@ margin:0% 3%;
 
 <div class="roww">
 <ul>
-<li><a href="#">Contact us</a></li>
-<li><a href="#">About Us</a></li>
-<li><a href="./login.php">Login</a></li>
-<li><a href="./signup.php">Sign Up</a></li>
-<li><a href="./cart.php">Cart</a></li>
+<li><a href="contactus.php">Contact us</a></li>
+<li><a href="about.php">About Us</a></li>
+<li><a href="login.php">Login</a></li>
+<li><a href="signup.php">Sign Up</a></li>
+<!-- <li><a href="add_to_cart.php">Cart</a></li> -->
 </ul>
 </div>
 
 <div class="roww">
-ALL Copyright © 2023 Vanilla - All rights reserved 
+ALL Copyright © 2023 Woof - All rights reserved 
 </div>
 </div>
 </footer>

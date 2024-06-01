@@ -22,16 +22,14 @@ html,body{
 .trends{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+#sticky_nav{
+  position: sticky;
+  top: 0px !important;
+}
 
 /* cards animation */
-.card {
-    width: 300px;
-    transition: transform 0.3s;
-  }
 
-  .card:hover {
-    transform: scale(1.00);
-  }
+
 
   /* nav right side icons animation */
   .carts{
@@ -39,9 +37,6 @@ html,body{
     transition: transform 0.3s;
   }
 
-  .carts:hover{
-    transform: scale(1.2);
-  }
   .navbar{
     font-weight: bold;
 
@@ -50,5 +45,12 @@ html,body{
 
   .navbar:hover{
     color: blueviolet;
+  }
+  
+  .sticky-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
   }
   

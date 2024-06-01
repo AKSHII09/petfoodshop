@@ -1,10 +1,10 @@
 <?php
-require 'navbar.php';
+// require 'header.php';
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Connect to the database (replace with your database credentials)
-    $db = new mysqli("localhost", "root", "", "ecom");
+    $db = new mysqli("localhost", "root", "", "petshop");
 
     // Check for a database connection error
     if ($db->connect_error) {
@@ -41,8 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $db->close();
 }
 ?>
-
-
+ <?php require'navbar.php';?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -51,10 +50,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
+   
     <div class="container mt-5 mb-5">
         <div class="row justify-content-center">
             <div class="col-md-4">
-                <div class="card">
+              
                     <div class="card-body">
                         <h2 class="card-title text-center">Login</h2>
                         <form method="post" action="">
@@ -71,13 +71,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <a href="signup.php"><button type="button" class="btn btn-info">sign up</button></a>
                         </form>
                     </div>
-                </div>
+               
             </div>
         </div>
+        
     </div>
 
     <!-- Include Bootstrap JS from a CDN if needed -->
-   <?php require'footer.php' ?>
+
+    <?php require'footer.php' ?>
+ 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

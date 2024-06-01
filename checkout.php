@@ -60,7 +60,7 @@
 
     <script>
         setTimeout(function() {
-            // After a delay, you can redirect the user to the checkout page or perform any other action
+            // After a delay, redirect the user to the checkout page 
             window.location.href = "index.php";
         }, 2000);
     </script>

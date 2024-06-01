@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Vanilla</title>
+    <title>Contact Us | Woof - Pet House</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./img/clogo.png"  type="image/x-icon">
     <!-- Include Bootstrap CSS -->
@@ -54,9 +54,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <p>If you have any questions, feedback, or inquiries, please don't hesitate to get in touch with us. We value your communication and strive to provide the best support to our customers.</p>
                 <p>You can contact us through the following methods:</p>
                 <ul>
-                    <li><strong>Email:</strong> <a href="mailto:contact@vanilla.com">contact@vanilla.com</a></li>
+                    <li><strong>Email:</strong> <a href="mailto:contact@woof.com">contact@woof.com</a></li>
                     <li><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></li>
-                    <li><strong>Address:</strong> 123 Vanilla Street, Rajarampuri 9th lane, Kolhapur</li>
+                    <li><strong>Address:</strong> 123 Woof - Pet house, Rajarampuri 9th lane, Kolhapur</li>
                 </ul>
             </div>
             <div class="col-md-6">

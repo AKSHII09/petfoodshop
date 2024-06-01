@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Vanilla</title>
+    <title>About Us | Woof</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./img/clogo.png"  type="image/x-icon">
     <!-- Include Bootstrap CSS -->
@@ -23,17 +23,13 @@
             <div class="col-md-8 offset-md-2">
                 <h1 class="text-center mb-4">About Us</h1>
                 <p>
-                    <strong>About Vanilla Online Clothing Store</strong>
-                    Welcome to Vanilla, your ultimate destination for trendy and fashionable clothing. We are not just another online clothing store; we are a lifestyle brand that believes in bringing you the latest fashion with a touch of elegance. Our passion for style, quality, and exceptional customer service sets us apart.
-                </p>
+                    <strong>Welcome to Our Pet- House</strong>
+                    We are dedicated to providing high-quality, nutritious food for your beloved pets. Our shop carries a wide range of pet food products, catering to the dietary needs of dogs & cats.</p>
                 <p>
-                    <strong>Unveil Your Unique Style</strong>
-                At Vanilla, we understand that your clothing choices are an expression of your individuality. That's why we offer a diverse range of clothing, from casual wear to formal attire, all curated to help you unveil your unique style. Explore our collections and find the perfect outfit for every occasion.
-                </p>
+                    
+                    Our team consists of passionate pet lovers who understand the importance of a healthy diet for your furry friends. We strive to offer personalized recommendations and excellent customer service.</p>
                 <p>
-                <strong>Your Style, Your Story! </strong>
-                At Vanilla, we believe that clothing is more than just fabric; it's a canvas for self-expression. Whether you're looking for a wardrobe refresh, an outfit for a special event, or simply want to elevate your daily style, Vanilla has you covered. Your style is your story, and we're here to help you tell it.
-                </p>
+                <strong> Visit us today and let us help you find the perfect food for your pet!</p> </strong>
             </div>
         </div>
     </div>
